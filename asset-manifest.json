@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.53c79aed.css",
+    "main.js": "/static/js/main.cce6b1c2.js",
+    "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
+    "static/media/Nekst-Black.woff2": "/static/media/Nekst-Black.44814bfd3ba4a266cf1d.woff2",
+    "static/media/Gilroy-Black.woff2": "/static/media/Gilroy-Black.ae06da6f25281591aa09.woff2",
+    "index.html": "/index.html",
+    "static/media/loading.svg": "/static/media/loading.5d3f671d792046a06a06c7351d7dcd52.svg",
+    "main.53c79aed.css.map": "/static/css/main.53c79aed.css.map",
+    "main.cce6b1c2.js.map": "/static/js/main.cce6b1c2.js.map",
+    "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.53c79aed.css",
+    "static/js/main.cce6b1c2.js"
+  ]
+}
