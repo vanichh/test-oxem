@@ -1,0 +1,20 @@
+.block {
+  width: fit-content;
+  .title {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #575757;
+    margin-bottom: 8px;
+  }
+  .out {
+    font-family: 'Nekst-Black';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 54px;
+    line-height: 90%;
+    color: #575757;
+  }
+}

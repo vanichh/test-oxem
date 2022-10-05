@@ -1,0 +1,38 @@
+.form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  align-items: end;
+  gap: 44px 32px;
+  grid-template-areas:
+    'a b c'
+    'd f g';
+
+  $count: 1;
+  @each $name in (a, b, c, d, f, g) {
+    & article:nth-child(#{$count}) {
+      grid-area: $name;
+    }
+    $count: $count + 1;
+  }
+
+  @media (max-width: 1024px) {
+    grid-template-areas:
+      'a a a a'
+      'b b b b'
+      'c c c c'
+      'd d f f'
+      'g . . .';
+    grid-template-columns: repeat(4, 1fr);
+  }
+  @media (max-width: 320px) {
+    grid-template-areas:
+      'a'
+      'b'
+      'c'
+      'd'
+      'f'
+      'g';
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

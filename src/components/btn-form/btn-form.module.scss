@@ -1,0 +1,45 @@
+@keyframes identifier {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.btn {
+  width: 100%;
+  position: relative;
+  border-radius: 40px;
+  background: var(--color-orange);
+  padding-top: 14px;
+  padding-bottom: 18px;
+  font-family: 'Nekst-Black';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 36px;
+  color: #ffffff;
+  border: none;
+  color: white;
+  transition: all 0.2s;
+  &:hover {
+    cursor: pointer;
+  }
+  .icon {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    animation: identifier infinite normal 1.2s linear;
+  }
+  &.active {
+    color: transparent;
+    .icon {
+      opacity: 1;
+    }
+  }
+}

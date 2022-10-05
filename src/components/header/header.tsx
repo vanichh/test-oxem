@@ -1,0 +1,12 @@
+import { FC } from 'react';
+import styles from './header.module.scss';
+
+export const Header: FC = () => {
+  return (
+    <header className={styles.header}>
+      <h1 className={styles.title}>
+        Рассчитайте стоимость <br /> автомобиля в лизинг
+      </h1>
+    </header>
+  );
+};
