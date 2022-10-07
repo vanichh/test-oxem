@@ -1,18 +1,22 @@
 {
   "files": {
-    "main.css": "/test-oxem/static/css/main.253c596c.css",
-    "main.js": "/test-oxem/static/js/main.37eda290.js",
+    "main.css": "/test-oxem/static/css/main.70b78903.css",
+    "main.js": "/test-oxem/static/js/main.e63dd179.js",
     "static/js/787.28cb0dcd.chunk.js": "/test-oxem/static/js/787.28cb0dcd.chunk.js",
+    "static/media/Nekst-Bold.woff2": "/test-oxem/static/media/Nekst-Bold.725d4dc33feb1dc85dde.woff2",
     "static/media/Nekst-Black.woff2": "/test-oxem/static/media/Nekst-Black.44814bfd3ba4a266cf1d.woff2",
-    "static/media/Gilroy-Black.woff2": "/test-oxem/static/media/Gilroy-Black.ae06da6f25281591aa09.woff2",
+    "static/media/Nekst-Light.woff2": "/test-oxem/static/media/Nekst-Light.c5331802f10037738ef4.woff2",
+    "static/media/Nekst-Medium.woff2": "/test-oxem/static/media/Nekst-Medium.58c6c33bedd14434d308.woff2",
+    "static/media/Gilroy-Bold.woff2": "/test-oxem/static/media/Gilroy-Bold.ef7c40ff1efeaaa4c7c6.woff2",
+    "static/media/Gilroy-Regular.woff2": "/test-oxem/static/media/Gilroy-Regular.f6c9931fabe5a6eb3307.woff2",
     "index.html": "/test-oxem/index.html",
     "static/media/loading.svg": "/test-oxem/static/media/loading.5d3f671d792046a06a06c7351d7dcd52.svg",
-    "main.253c596c.css.map": "/test-oxem/static/css/main.253c596c.css.map",
-    "main.37eda290.js.map": "/test-oxem/static/js/main.37eda290.js.map",
+    "main.70b78903.css.map": "/test-oxem/static/css/main.70b78903.css.map",
+    "main.e63dd179.js.map": "/test-oxem/static/js/main.e63dd179.js.map",
     "787.28cb0dcd.chunk.js.map": "/test-oxem/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.253c596c.css",
-    "static/js/main.37eda290.js"
+    "static/css/main.70b78903.css",
+    "static/js/main.e63dd179.js"
   ]
 }
