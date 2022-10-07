@@ -31,7 +31,9 @@ export const calcSlice = createSlice({
   initialState,
   reducers: {
     setCarCost: (state, { payload }: PayloadAction<number>) => {
-      state.carCost = payload;
+      if (payload >= 1000000 && payload <= 6000000) {
+        state.carCost = payload;
+      }
       state.initialSum = Math.ceil((state.initialPercent / 100) * payload);
       state.monthlyPayment = payment(
         state.carCost,
@@ -53,7 +55,9 @@ export const calcSlice = createSlice({
         state.initialSum + state.monthly * state.monthlyPayment;
     },
     setMonthlyPayment: (state, { payload }: PayloadAction<number>) => {
-      state.monthly = payload;
+      if (payload >= 13 && payload <= 60) {
+        state.monthly = payload;
+      }
       state.monthlyPayment = payment(
         state.carCost,
         state.initialSum,
@@ -76,10 +80,10 @@ export const calcSlice = createSlice({
   extraReducers: (builder) => {
     builder
       .addCase(setCarCost, () => {
-        console.log(1);
+        // console.log(1);
       })
       .addDefaultCase((state) => {
-        console.log(1);
+        // console.log(1);
       });
   },
 });

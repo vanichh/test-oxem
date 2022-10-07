@@ -1,20 +1,5 @@
 @import url(./reset.scss);
-
-@font-face {
-  font-family: 'Gilroy';
-  src: local('Gilroy'), url('../public/fonts/gilroy/Gilroy-Black.woff2');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Nekst-Black';
-  src: local('Nekst-Black'),
-    url('../public/fonts/nekst-black/Nekst-Black.woff2');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
+@import url(./fonts.scss);
 
 :root {
   --color-orange: #ff9514;
@@ -29,13 +14,6 @@ body {
   max-width: 1440px;
   width: 100%;
   background: #fff;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-main {
   padding: 0 36px;
   @media (max-width: 320px) {
     & {

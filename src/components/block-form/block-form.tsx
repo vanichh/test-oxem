@@ -3,7 +3,7 @@ import styles from './block-form.module.scss';
 
 export interface IProps {
   title: string;
-  out: number;
+  out: string;
 }
 
 export const BlockForm: FC<IProps> = ({ title, out }) => {

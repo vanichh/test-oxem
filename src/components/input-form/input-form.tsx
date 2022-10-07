@@ -1,8 +1,9 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { ChangeEvent, FC, useId } from 'react';
 import { useAppDispatch } from 'util/hooks';
-import styles from './input.module.scss';
+import styles from './input-form.module.scss';
 import cn from 'classnames';
+import { strToNumber } from 'util/str-to-Number';
 
 interface IProps {
   title?: string;
@@ -10,8 +11,8 @@ interface IProps {
   rangMax: number;
   step?: number;
   prefix?: string;
-  value: number;
-  rangeValue?: number;
+  value: string;
+  rangeValue?: string;
   funcValue?: (payload: number) => {
     payload: number;
     type: string;
@@ -22,7 +23,7 @@ interface IProps {
   };
 }
 
-export const Input: FC<IProps> = (props) => {
+export const InputForm: FC<IProps> = (props) => {
   const {
     title,
     rangMin,
@@ -39,15 +40,15 @@ export const Input: FC<IProps> = (props) => {
 
   const handlerValue = ({ target }: ChangeEvent<HTMLInputElement>) => {
     if (funcValue) {
-      dispatch(funcValue(Number(target.value)));
+      dispatch(funcValue(strToNumber(target.value)));
     }
   };
 
   const handlerRange = ({ target }: ChangeEvent<HTMLInputElement>) => {
     if (funcRange) {
-      dispatch(funcRange(Number(target.value)));
+      dispatch(funcRange(strToNumber(target.value)));
     } else if (funcValue) {
-      dispatch(funcValue(Number(target.value)));
+      dispatch(funcValue(strToNumber(target.value)));
     }
   };
 
@@ -65,10 +66,9 @@ export const Input: FC<IProps> = (props) => {
           onChange={handlerValue}
           className={styles.value}
           id={`input-${id}`}
-          type={'number'}
+          type={'text'}
           min={rangeValue ? undefined : rangMin}
           max={rangeValue ? undefined : rangMax}
-          disabled={!!rangeValue}
         />
         {prefix && (
           <span
@@ -79,7 +79,7 @@ export const Input: FC<IProps> = (props) => {
         )}
       </div>
       <input
-        value={rangeValue || value}
+        value={strToNumber(rangeValue || value)}
         onChange={handlerRange}
         min={rangMin}
         max={rangMax}
