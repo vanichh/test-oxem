@@ -66,8 +66,14 @@ export const Form: FC = () => {
         funcRange={setMonthlyPayment}
         funcValue={setMonthlyPayment}
       />
-      <BlockForm title={'Сумма договора лизинга'} out={`${sumContract} ₽`} />
-      <BlockForm title={'Ежемесячный платеж от'} out={`${monthlyPayment} ₽`} />
+      <BlockForm
+        title={'Сумма договора лизинга'}
+        out={`${rankToNumber(sumContract)} ₽`}
+      />
+      <BlockForm
+        title={'Ежемесячный платеж от'}
+        out={`${rankToNumber(monthlyPayment)} ₽`}
+      />
       <BtnForm title={'Оставить заявку'} />
     </form>
   );
